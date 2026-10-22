@@ -5,6 +5,7 @@
 
 VidMind is a Streamlit web app that listens to a video or audio file for you. Paste a YouTube link or upload a recording, and it produces a structured report and a chatbot that answers questions grounded in the transcript.
 
+**LIVE_DEMO_LINK** :https://aivideoassistant-vcoxgr9tgx6jnoiyhp6afa.streamlit.app/
 📊 **Project presentation:** [VidMind_Presentation.pptx](docs/VidMind_Presentation.pptx)
 
 ---
