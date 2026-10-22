@@ -1,4 +1,5 @@
 
+--extra-index-url https://download.pytorch.org/whl/cpu
 streamlit
 yt-dlp
 ffmpeg-python
@@ -8,6 +9,8 @@ langchain
 langchain-core
 langchain-community
 langchain-mistralai
+langchain-chroma
+langchain-text-splitters
 chromadb
 sentence-transformers
 transformers
@@ -15,3 +18,5 @@ huggingface-hub
 reportlab
 python-dotenv
 pydub
+requests
+pysqlite3-binary; sys_platform == "linux"
