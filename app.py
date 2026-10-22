@@ -578,7 +578,7 @@ else:
                 col.button(s, key=f"sug_{s}", on_click=set_pending, args=(s,), use_container_width=True)
 
         for msg in st.session_state.messages:
-            with st.chat_message(msg["role"], avatar="🧑" if msg["role"] == "user" else "🎬"):
+            with st.chat_message(msg["role"], avatar="🧑‍💻" if msg["role"] == "user" else "🤖"):
                 st.markdown(msg["content"])
 
         typed = st.chat_input("Ask anything about this video…")
@@ -586,10 +586,10 @@ else:
 
         if question:
             st.session_state.messages.append({"role": "user", "content": question})
-            with st.chat_message("user", avatar="🧑"):
+            with st.chat_message("user", avatar="🧑‍💻"):
                 st.markdown(question)
 
-            with st.chat_message("assistant", avatar="🎬"):
+            with st.chat_message("assistant", avatar="🤖"):
                 with st.spinner("Searching the transcript…"):
                     try:
                         answer = ask_question(result["rag_chain"], question)
